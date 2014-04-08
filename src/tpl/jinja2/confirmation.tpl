@@ -13,10 +13,6 @@
 {%   set arrow_fmt = " ^[->](%s%s)" % (ex.transaction, a.txid) %}
 {% endif %}
 {% if a.coinval: %}
-{%   if a.coinval < 0.0001 %}
-{%     set coin_amount = ( a.coinval * 100000000.0 ) %}
-{%     set amount_prefix_short = "s" %}
-{%     set amount_prefix_long = "satoshi" %}
 {%   elif a.coinval < 1.0 %}
 {%     set coin_amount = ( a.coinval * 1000.0 ) %}
 {%     set amount_prefix_short = "m" %}

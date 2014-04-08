@@ -1,22 +1,18 @@
-# Reddit ALTcointip bot
+# Reddit Gridcointip bot - a fork of [ALTcointip bot](https://github.com/vindimy/altcointip)
 
 ## Introduction
 
 For introduction to and use of ALTcointip bot, see __http://www.reddit.com/r/ALTcointip/wiki/index__
 
-## Getting Started
-
->**NEW: See [altcointip-chef](https://github.com/vindimy/altcointip-chef) for Chef-automated installation and configuration of ALTcointip bot.**
-
 ### Python Dependencies
 
 The following Python libraries are necessary to run ALTcointip bot:
 
-* __jinja2__ (http://jinja.pocoo.org/)
-* __pifkoin__ (https://github.com/dpifke/pifkoin)
-* __praw__ (https://github.com/praw-dev/praw)
-* __sqlalchemy__ (http://www.sqlalchemy.org/)
-* __yaml__ (http://pyyaml.org/wiki/PyYAML)
+* jinja2 (http://jinja.pocoo.org/)
+* pifkoin (https://github.com/dpifke/pifkoin)
+* praw (https://github.com/praw-dev/praw)
+* sqlalchemy (http://www.sqlalchemy.org/)
+* yaml (http://pyyaml.org/wiki/PyYAML)
 
 You can install `jinja2`, `praw`, `sqlalchemy`, and `yaml` using `pip` (Python Package Index tool) or a package manager in your OS. For `pifkoin`, you'll need to copy or symlink its "python" subdirectory to `src/ctb/pifkoin`.
 
@@ -26,7 +22,7 @@ Create a new MySQL database instance and run included SQL file [altcointip.sql](
 
 ### Coin Daemons
 
-Download one or more coin daemon executable. Create a configuration file for it in appropriate directory (such as `~/.mycoin/mycoin.conf` for Litecoin), specifying `rpcuser`, `rpcpassword`, `rpcport`, and `server=1`, then start the daemon. It will take some time for the daemon to download the blockchain, after which you should verify that it's accepting commands (such as `mycoind getinfo` and `mycoind listaccounts`).
+Download one or more coin daemon executable. Create a configuration file for it in appropriate directory (such as `~/.gridcoin/gridcoin.conf` for Gridcoin), specifying `rpcuser`, `rpcpassword`, `rpcport`, and `server=1`, then start the daemon. It will take some time for the daemon to download the blockchain, after which you should verify that it's accepting commands (such as `mycoind getinfo` and `mycoind listaccounts`).
 
 ### Reddit Account
 
